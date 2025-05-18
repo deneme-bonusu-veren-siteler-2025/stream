@@ -1,0 +1,123 @@
+<!doctype html>
+<html amp lang="tr">
+<head>
+  <meta charset="utf-8">
+  <title>Canlı Yayın AMP Sayfası</title>
+  <link rel="canonical" href="https://yourdomain.com/amp">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <!-- IMASDK ile VAST destekli video player -->
+  <script async custom-element="amp-ima-video" src="https://cdn.ampproject.org/v0/amp-ima-video-0.1.js"></script>
+  <!-- Türkçe karakterleri destekleyen font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style amp-custom>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .header {
+      background-color: #003366;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+    }
+    .logo {
+      width: 50px;
+      height: 50px;
+    }
+    .site-title {
+      margin-left: 15px;
+      font-size: 1.5rem;
+    }
+    .main-banner,
+    .banner {
+      margin: 10px 0;
+    }
+    .footer {
+      background-color: #005BAA;
+      color: #eee;
+      padding: 20px;
+      text-align: center;
+    }
+    .tag-cloud {
+      margin: 10px 0;
+    }
+    .tag-cloud a {
+      display: inline-block;
+      background-color: #004080;
+      color: #fff;
+      text-decoration: none;
+      margin: 5px;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+    .tag-cloud a:hover {
+      background-color: #003366;
+    }
+    .description {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <!-- Başlık -->
+  <header class="header">
+    <amp-img src="https://yourdomain.com/logo.png" width="50" height="50" alt="Logo" class="logo"></amp-img>
+    <div class="site-title">Site Adı</div>
+  </header>
+
+  <!-- Reklam Banner 1 -->
+  <section class="main-banner">
+    <a href="https://reklamveren.com" target="_blank">
+      <amp-img src="https://yourdomain.com/ad1.avif" width="728" height="90" layout="responsive" alt="Reklam Banner 1"></amp-img>
+    </a>
+  </section>
+
+  <!-- Video Player (VAST pre-roll destekli) -->
+  <section>
+    <amp-ima-video
+      width="640"
+      height="360"
+      layout="responsive"
+      data-tag="https://deneme-bonusu-veren-siteler-2025.github.io/vastBahisbey.xml"
+      data-poster="https://yourdomain.com/poster.jpg"
+    >
+      <source src="https://stream.btwrld.link/hls/stream1.m3u8" type="application/x-mpegURL">
+    </amp-ima-video>
+  </section>
+
+  <!-- Reklam Banner 2 -->
+  <section class="banner">
+    <a href="https://reklamveren.com" target="_blank">
+      <amp-img src="https://yourdomain.com/ad2.webp" width="728" height="90" layout="responsive" alt="Reklam Banner 2"></amp-img>
+    </a>
+  </section>
+
+  <!-- Reklam Banner 3 -->
+  <section class="banner">
+    <a href="https://reklamveren2.com" target="_blank">
+      <amp-img src="https://yourdomain.com/ad3.avif" width="728" height="90" layout="responsive" alt="Reklam Banner 3"></amp-img>
+    </a>
+  </section>
+
+  <!-- Altbilgi -->
+  <footer class="footer">
+    <div class="tag-cloud">
+      <a href="/keyword/video-yayini">video yayını</a>
+      <a href="/keyword/canli-yayin">canlı yayın</a>
+      <a href="/keyword/rtmp">RTMP sunucu</a>
+      <a href="/keyword/amp-html">AMP HTML</a>
+      <a href="/keyword/vast-reklam">VAST reklam</a>
+      <a href="/keyword/ima-sdk">IMA SDK</a>
+    </div>
+    <p class="description">
+      Bu sayfa, mobil odaklı canlı yayın yapmak için AMP uyumlu olarak tasarlanmış olup, yüksek hız ve SEO performansı sunar.
+    </p>
+  </footer>
+</body>
+</html>
